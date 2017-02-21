@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankGothicBold.ttf">
+            <string>BankGothicBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokktDemoOptionVC">
+            <connections>
+                <outlet property="bannerAdsBtn" destination="Iac-Ok-RgI" id="4sl-FJ-CNn"/>
+                <outlet property="interstitialAdsBtn" destination="7DB-DM-cAq" id="Eak-4d-Ub6"/>
+                <outlet property="logoImgV" destination="ghq-YM-13U" id="8La-Zu-yeT"/>
+                <outlet property="scrollView" destination="B1R-i0-or1" id="dDB-N1-C3U"/>
+                <outlet property="settingBtn" destination="qbJ-3r-Lym" id="n1t-eM-FRE"/>
+                <outlet property="videoAdsBtn" destination="ZcT-wl-qCU" id="7k2-Kw-F7Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoBG" translatesAutoresizingMaskIntoConstraints="NO" id="ghq-YM-13U">
+                    <rect key="frame" x="4" y="184" width="367" height="299"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="299" id="eMR-FC-bk8"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1R-i0-or1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcT-wl-qCU">
+                            <rect key="frame" x="30" y="66" width="315" height="45"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="Ey7-tz-JuR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                            <state key="normal" title="Video Ads">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="videoAdsDemo:" destination="-1" eventType="touchUpInside" id="drk-Ma-uXg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DB-DM-cAq">
+                            <rect key="frame" x="30" y="124" width="315" height="45"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                            <state key="normal" title="Interstitial Ads">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="interstitialAdsDemo:" destination="-1" eventType="touchUpInside" id="kFf-3X-TzP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iac-Ok-RgI">
+                            <rect key="frame" x="30" y="182" width="315" height="45"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ldI-Oy-s2W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                            <state key="normal" title="Banner Ads">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="bannerAdsDemo:" destination="-1" eventType="touchUpInside" id="1W5-z9-FfB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbJ-3r-Lym">
+                            <rect key="frame" x="30" y="332" width="315" height="45"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="y3Q-41-gTs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                            <state key="normal" title="More...">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="settingVC:" destination="-1" eventType="touchUpInside" id="8t1-1T-aWT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="trailing" secondItem="qbJ-3r-Lym" secondAttribute="trailing" id="3hm-J1-4T0"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="leading" secondItem="Iac-Ok-RgI" secondAttribute="leading" id="454-4v-HvI"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="trailing" secondItem="Iac-Ok-RgI" secondAttribute="trailing" id="4Pa-ac-UEm"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="leading" secondItem="7DB-DM-cAq" secondAttribute="leading" id="Adh-iW-okP"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="top" secondItem="B1R-i0-or1" secondAttribute="top" constant="66" id="IIt-Sz-Ldj"/>
+                        <constraint firstItem="qbJ-3r-Lym" firstAttribute="top" secondItem="B1R-i0-or1" secondAttribute="top" constant="332" id="NkB-An-mLU"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="leading" secondItem="qbJ-3r-Lym" secondAttribute="leading" id="OBV-ut-8oA"/>
+                        <constraint firstAttribute="bottom" secondItem="ZcT-wl-qCU" secondAttribute="bottom" constant="530" id="QRL-gQ-3Fo"/>
+                        <constraint firstAttribute="trailing" secondItem="ZcT-wl-qCU" secondAttribute="trailing" constant="30" id="UbH-UI-HUb"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="centerX" secondItem="B1R-i0-or1" secondAttribute="centerX" id="VQF-eN-DDg"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="leading" secondItem="B1R-i0-or1" secondAttribute="leading" constant="30" id="kjd-Xb-18c"/>
+                        <constraint firstItem="Iac-Ok-RgI" firstAttribute="top" secondItem="B1R-i0-or1" secondAttribute="top" constant="182" id="lqz-aM-4Zw"/>
+                        <constraint firstItem="ZcT-wl-qCU" firstAttribute="trailing" secondItem="7DB-DM-cAq" secondAttribute="trailing" id="nUd-5S-W0I"/>
+                        <constraint firstItem="7DB-DM-cAq" firstAttribute="top" secondItem="ZcT-wl-qCU" secondAttribute="bottom" constant="13" id="np5-Uo-gwq"/>
+                        <constraint firstItem="Iac-Ok-RgI" firstAttribute="top" secondItem="7DB-DM-cAq" secondAttribute="bottom" constant="13" id="s9O-eY-uv1"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poQ-rA-BMF">
+                    <rect key="frame" x="0.0" y="640" width="375" height="27"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v6.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCz-FD-Xsi">
+                            <rect key="frame" x="132" y="3" width="118" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B1R-i0-or1" firstAttribute="centerX" secondItem="ghq-YM-13U" secondAttribute="centerX" id="3mq-00-Igs"/>
+                <constraint firstItem="B1R-i0-or1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Flk-BM-0QC"/>
+                <constraint firstItem="ghq-YM-13U" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TPE-UM-J7b"/>
+                <constraint firstItem="B1R-i0-or1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U70-ZC-wp0"/>
+                <constraint firstAttribute="bottom" secondItem="B1R-i0-or1" secondAttribute="bottom" constant="26" id="cip-fX-hNp"/>
+                <constraint firstAttribute="trailing" secondItem="B1R-i0-or1" secondAttribute="trailing" id="kNS-U3-K74"/>
+                <constraint firstItem="ghq-YM-13U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="4" id="l8p-zf-ux8"/>
+            </constraints>
+            <point key="canvasLocation" x="-139.5" y="66.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LogoBG" width="512" height="315"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
