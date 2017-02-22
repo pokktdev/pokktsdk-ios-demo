@@ -6,9 +6,7 @@
 2. Make sure to add PokktSDK.bundle file to application
 3. Please add following exceptions in your application info.plist file(please edit assource for this.)
 
-~~~
-	<key>NSAppTransportSecurity</key><br>
-~~~
+	`<key>NSAppTransportSecurity</key>`<br>
 	`<dict>`<br>`<key>NSExceptionDomains</key>`<br>`<dict>`<br>
 `<key>pokkt.com</key>`<br>`<dict>`<br>`<key>NSIncludesSubdomains</key>`<br>
 `<true/>`<br>
