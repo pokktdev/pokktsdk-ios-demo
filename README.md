@@ -58,7 +58,8 @@
 
 To Show Video Ad:
 
-```[PokktAds showAd:screenId viewController:viewController withDelegate:delegate];
+```
+[PokktAds showAd:screenId viewController:viewController withDelegate:delegate];
 ```
 
 You can check if an ad is available, before making a showrequest.
