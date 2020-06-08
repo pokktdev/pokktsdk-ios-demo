@@ -134,7 +134,8 @@ Inside the
 ```
 method you will receive PokktNativeAd object and then extract your ad by calling below method.
 ```
-UIView *adView = [pokktNativeAd getMediaView]; ```
+UIView *adView = [pokktNativeAd getMediaView]; 
+```
 
 1. Ad actions are optional, but we suggest to implement them as it will help you to keep track of the status of your ad request.
 ```
