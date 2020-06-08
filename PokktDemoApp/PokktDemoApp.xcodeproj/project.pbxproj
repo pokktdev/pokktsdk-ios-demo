@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E25B65B248E16B70082CA9A /* PokktSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E25B65A248E16B70082CA9A /* PokktSDK.framework */; };
+		2E7002D9243B241D007DDF70 /* PokktNativeScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7002D8243B241D007DDF70 /* PokktNativeScrollVC.m */; };
+		2E7002E2243B264F007DDF70 /* PokktNativeAdsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7002E1243B264F007DDF70 /* PokktNativeAdsVC.m */; };
+		EC5F3A0F20D27244009E80CD /* PokktAdsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5F3A0D20D27243009E80CD /* PokktAdsVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EC7AEE9520AC226400411222 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7AEE9420AC226400411222 /* AppDelegate.m */; };
+		EC7AEE9B20AC226400411222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEE9920AC226400411222 /* Main.storyboard */; };
+		EC7AEE9D20AC226500411222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEE9C20AC226500411222 /* Assets.xcassets */; };
+		EC7AEEA020AC226500411222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEE9E20AC226500411222 /* LaunchScreen.storyboard */; };
+		EC7AEEA320AC226500411222 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7AEEA220AC226500411222 /* main.m */; };
+		EC7AEEB920AC230500411222 /* icons8-Tick Box_500.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEAF20AC230500411222 /* icons8-Tick Box_500.png */; };
+		EC7AEEBA20AC230500411222 /* icons8-Tick Box_100.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB020AC230500411222 /* icons8-Tick Box_100.png */; };
+		EC7AEEBB20AC230500411222 /* icons8-Unchecked Checkbox_500.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB120AC230500411222 /* icons8-Unchecked Checkbox_500.png */; };
+		EC7AEEBC20AC230500411222 /* icons8-Tick Box_50.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB220AC230500411222 /* icons8-Tick Box_50.png */; };
+		EC7AEEBD20AC230500411222 /* icons8-Unchecked Checkbox_100.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB320AC230500411222 /* icons8-Unchecked Checkbox_100.png */; };
+		EC7AEEBE20AC230500411222 /* 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB420AC230500411222 /* 640x1136.png */; };
+		EC7AEEBF20AC230500411222 /* pokkt_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB520AC230500411222 /* pokkt_lg.png */; };
+		EC7AEEC020AC230500411222 /* icons8-Unchecked Checkbox_50.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB620AC230500411222 /* icons8-Unchecked Checkbox_50.png */; };
+		EC7AEEC120AC230500411222 /* pkt_40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB720AC230500411222 /* pkt_40x40.png */; };
+		EC7AEEC220AC230500411222 /* BankGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC7AEEB820AC230500411222 /* BankGothicBold.ttf */; };
+		EC7AEEC620AC238B00411222 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEEC520AC238B00411222 /* libc++.tbd */; };
+		EC7AEEC820AC239000411222 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEEC720AC239000411222 /* AVFoundation.framework */; };
+		EC7AEECA20AC239700411222 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEEC920AC239700411222 /* CoreLocation.framework */; };
+		EC7AEED020AC23A900411222 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEECF20AC23A900411222 /* MessageUI.framework */; };
+		EC7AEED220AC23AE00411222 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEED120AC23AE00411222 /* CoreMotion.framework */; };
+		EC7AEED420AC23B500411222 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEED320AC23B500411222 /* CoreGraphics.framework */; };
+		EC7AEED620AC23BA00411222 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEED520AC23BA00411222 /* AdSupport.framework */; };
+		EC7AEED820AC23C100411222 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEED720AC23C100411222 /* CoreTelephony.framework */; };
+		EC7AEEDA20AC23C700411222 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEED920AC23C700411222 /* UIKit.framework */; };
+		EC7AEEDC20AC23CD00411222 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEEDB20AC23CD00411222 /* SystemConfiguration.framework */; };
+		EC7AEEDE20AC23D300411222 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEEDD20AC23D300411222 /* MediaPlayer.framework */; };
+		EC7AEEE020AC23D900411222 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEEDF20AC23D900411222 /* Foundation.framework */; };
+		EC7AEEFF20AC2A9000411222 /* PokktVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7AEEFE20AC2A9000411222 /* PokktVideoVC.m */; };
+		EC7AEF0320AC317600411222 /* PokktUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7AEF0220AC317600411222 /* PokktUtility.m */; };
+		EC7AEF0620AC3BB000411222 /* PokktBannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7AEF0520AC3BB000411222 /* PokktBannerVC.m */; };
+		EC7AEF1620AC5E9700411222 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7AEF1520AC5E9700411222 /* SettingVC.m */; };
+		EC7BA4CA215D015100FA9C26 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7BA4C9215D015100FA9C26 /* QuartzCore.framework */; };
+		EC9FCEDF2110639B00B5AD66 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEECB20AC23A300411222 /* EventKit.framework */; };
+		ECA163B0213938E500013DA5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163AF213938E500013DA5 /* libsqlite3.0.tbd */; };
+		ECA163B2213938EF00013DA5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163B1213938EF00013DA5 /* libz.tbd */; };
+		ECA163BC21393D3600013DA5 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163BB21393D3600013DA5 /* libz.1.2.5.tbd */; };
+		ECA163BE21393D4700013DA5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163BD21393D4700013DA5 /* AudioToolbox.framework */; };
+		ECA163C021393D5B00013DA5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163BF21393D5B00013DA5 /* CoreMedia.framework */; };
+		ECA163C221393D6900013DA5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163C121393D6900013DA5 /* JavaScriptCore.framework */; };
+		ECA163C421393D8300013DA5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163C321393D8300013DA5 /* MobileCoreServices.framework */; };
+		ECA163C621393D9000013DA5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163C521393D9000013DA5 /* Social.framework */; };
+		ECA163CA21393DA900013DA5 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163C921393DA900013DA5 /* WatchConnectivity.framework */; };
+		ECA163DE2139429700013DA5 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA163DD2139429600013DA5 /* SafariServices.framework */; };
+		ECA1653A2139546400013DA5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA165392139546400013DA5 /* libxml2.tbd */; };
+		ECA1653B2139552800013DA5 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7AEECC20AC23A300411222 /* EventKitUI.framework */; };
+		ECEDA6222135A770001AA85D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDA6202135A76F001AA85D /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E25B65A248E16B70082CA9A /* PokktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PokktSDK.framework; sourceTree = "<group>"; };
+		2E7002D7243B241D007DDF70 /* PokktNativeScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokktNativeScrollVC.h; sourceTree = "<group>"; };
+		2E7002D8243B241D007DDF70 /* PokktNativeScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokktNativeScrollVC.m; sourceTree = "<group>"; };
+		2E7002E0243B264F007DDF70 /* PokktNativeAdsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokktNativeAdsVC.h; sourceTree = "<group>"; };
+		2E7002E1243B264F007DDF70 /* PokktNativeAdsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokktNativeAdsVC.m; sourceTree = "<group>"; };
+		EC5F3A0D20D27243009E80CD /* PokktAdsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokktAdsVC.m; sourceTree = "<group>"; };
+		EC7AEE9020AC226400411222 /* POKKTAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POKKTAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7AEE9320AC226400411222 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC7AEE9420AC226400411222 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC7AEE9A20AC226400411222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC7AEE9C20AC226500411222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC7AEE9F20AC226500411222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC7AEEA120AC226500411222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7AEEA220AC226500411222 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC7AEEAB20AC22C000411222 /* PokktAdsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokktAdsVC.h; sourceTree = "<group>"; };
+		EC7AEEAF20AC230500411222 /* icons8-Tick Box_500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Tick Box_500.png"; sourceTree = "<group>"; };
+		EC7AEEB020AC230500411222 /* icons8-Tick Box_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Tick Box_100.png"; sourceTree = "<group>"; };
+		EC7AEEB120AC230500411222 /* icons8-Unchecked Checkbox_500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Unchecked Checkbox_500.png"; sourceTree = "<group>"; };
+		EC7AEEB220AC230500411222 /* icons8-Tick Box_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Tick Box_50.png"; sourceTree = "<group>"; };
+		EC7AEEB320AC230500411222 /* icons8-Unchecked Checkbox_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Unchecked Checkbox_100.png"; sourceTree = "<group>"; };
+		EC7AEEB420AC230500411222 /* 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 640x1136.png; sourceTree = "<group>"; };
+		EC7AEEB520AC230500411222 /* pokkt_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokkt_lg.png; sourceTree = "<group>"; };
+		EC7AEEB620AC230500411222 /* icons8-Unchecked Checkbox_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-Unchecked Checkbox_50.png"; sourceTree = "<group>"; };
+		EC7AEEB720AC230500411222 /* pkt_40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pkt_40x40.png; sourceTree = "<group>"; };
+		EC7AEEB820AC230500411222 /* BankGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BankGothicBold.ttf; sourceTree = "<group>"; };
+		EC7AEEC520AC238B00411222 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		EC7AEEC720AC239000411222 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC7AEEC920AC239700411222 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC7AEECB20AC23A300411222 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		EC7AEECC20AC23A300411222 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		EC7AEECF20AC23A900411222 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EC7AEED120AC23AE00411222 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		EC7AEED320AC23B500411222 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC7AEED520AC23BA00411222 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EC7AEED720AC23C100411222 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EC7AEED920AC23C700411222 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC7AEEDB20AC23CD00411222 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC7AEEDD20AC23D300411222 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EC7AEEDF20AC23D900411222 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC7AEEE120AC23DF00411222 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EC7AEEFD20AC2A9000411222 /* PokktVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokktVideoVC.h; sourceTree = "<group>"; };
+		EC7AEEFE20AC2A9000411222 /* PokktVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokktVideoVC.m; sourceTree = "<group>"; };
+		EC7AEF0120AC317600411222 /* PokktUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokktUtility.h; sourceTree = "<group>"; };
+		EC7AEF0220AC317600411222 /* PokktUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokktUtility.m; sourceTree = "<group>"; };
+		EC7AEF0420AC3BB000411222 /* PokktBannerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokktBannerVC.h; sourceTree = "<group>"; };
+		EC7AEF0520AC3BB000411222 /* PokktBannerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokktBannerVC.m; sourceTree = "<group>"; };
+		EC7AEF1420AC5E9700411222 /* SettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		EC7AEF1520AC5E9700411222 /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		EC7BA4C9215D015100FA9C26 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ECA163AF213938E500013DA5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		ECA163B1213938EF00013DA5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		ECA163BB21393D3600013DA5 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		ECA163BD21393D4700013DA5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ECA163BF21393D5B00013DA5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		ECA163C121393D6900013DA5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ECA163C321393D8300013DA5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ECA163C521393D9000013DA5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		ECA163C921393DA900013DA5 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		ECA163DD2139429600013DA5 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		ECA165392139546400013DA5 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		ECEDA6202135A76F001AA85D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC7AEE8D20AC226400411222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7BA4CA215D015100FA9C26 /* QuartzCore.framework in Frameworks */,
+				EC7AEEDE20AC23D300411222 /* MediaPlayer.framework in Frameworks */,
+				ECA1653B2139552800013DA5 /* EventKitUI.framework in Frameworks */,
+				ECA1653A2139546400013DA5 /* libxml2.tbd in Frameworks */,
+				ECA163DE2139429700013DA5 /* SafariServices.framework in Frameworks */,
+				2E25B65B248E16B70082CA9A /* PokktSDK.framework in Frameworks */,
+				ECA163CA21393DA900013DA5 /* WatchConnectivity.framework in Frameworks */,
+				ECA163C621393D9000013DA5 /* Social.framework in Frameworks */,
+				ECA163C421393D8300013DA5 /* MobileCoreServices.framework in Frameworks */,
+				EC7AEED020AC23A900411222 /* MessageUI.framework in Frameworks */,
+				ECA163C221393D6900013DA5 /* JavaScriptCore.framework in Frameworks */,
+				ECA163C021393D5B00013DA5 /* CoreMedia.framework in Frameworks */,
+				EC7AEEC820AC239000411222 /* AVFoundation.framework in Frameworks */,
+				ECA163BE21393D4700013DA5 /* AudioToolbox.framework in Frameworks */,
+				ECA163BC21393D3600013DA5 /* libz.1.2.5.tbd in Frameworks */,
+				ECA163B2213938EF00013DA5 /* libz.tbd in Frameworks */,
+				ECA163B0213938E500013DA5 /* libsqlite3.0.tbd in Frameworks */,
+				ECEDA6222135A770001AA85D /* WebKit.framework in Frameworks */,
+				EC9FCEDF2110639B00B5AD66 /* EventKit.framework in Frameworks */,
+				EC7AEEE020AC23D900411222 /* Foundation.framework in Frameworks */,
+				EC7AEEDC20AC23CD00411222 /* SystemConfiguration.framework in Frameworks */,
+				EC7AEEDA20AC23C700411222 /* UIKit.framework in Frameworks */,
+				EC7AEED820AC23C100411222 /* CoreTelephony.framework in Frameworks */,
+				EC7AEED620AC23BA00411222 /* AdSupport.framework in Frameworks */,
+				EC7AEED420AC23B500411222 /* CoreGraphics.framework in Frameworks */,
+				EC7AEED220AC23AE00411222 /* CoreMotion.framework in Frameworks */,
+				EC7AEECA20AC239700411222 /* CoreLocation.framework in Frameworks */,
+				EC7AEEC620AC238B00411222 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E7002E3243B5428007DDF70 /* NativeAds */ = {
+			isa = PBXGroup;
+			children = (
+				2E7002D7243B241D007DDF70 /* PokktNativeScrollVC.h */,
+				2E7002D8243B241D007DDF70 /* PokktNativeScrollVC.m */,
+				2E7002E0243B264F007DDF70 /* PokktNativeAdsVC.h */,
+				2E7002E1243B264F007DDF70 /* PokktNativeAdsVC.m */,
+			);
+			path = NativeAds;
+			sourceTree = "<group>";
+		};
+		EC7AEE8720AC226400411222 = {
+			isa = PBXGroup;
+			children = (
+				EC7AEEAE20AC230500411222 /* Images */,
+				EC7AEE9220AC226400411222 /* PokktDemoApp */,
+				EC7AEE9120AC226400411222 /* Products */,
+				EC7AEEC420AC238A00411222 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC7AEE9120AC226400411222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC7AEE9020AC226400411222 /* POKKTAds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC7AEE9220AC226400411222 /* PokktDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				EC7AEF0020AC315500411222 /* PokktUtility */,
+				EC7AEEA920AC227800411222 /* Classes */,
+				EC7AEE9320AC226400411222 /* AppDelegate.h */,
+				EC7AEE9420AC226400411222 /* AppDelegate.m */,
+				EC7AEE9920AC226400411222 /* Main.storyboard */,
+				EC7AEE9C20AC226500411222 /* Assets.xcassets */,
+				EC7AEE9E20AC226500411222 /* LaunchScreen.storyboard */,
+				EC7AEEA120AC226500411222 /* Info.plist */,
+				EC7AEEA220AC226500411222 /* main.m */,
+			);
+			path = PokktDemoApp;
+			sourceTree = "<group>";
+		};
+		EC7AEEA920AC227800411222 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC7AEEAA20AC228600411222 /* AdFormatClasses */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC7AEEAA20AC228600411222 /* AdFormatClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2E7002E3243B5428007DDF70 /* NativeAds */,
+				EC7AEEAB20AC22C000411222 /* PokktAdsVC.h */,
+				EC5F3A0D20D27243009E80CD /* PokktAdsVC.m */,
+				EC7AEEFD20AC2A9000411222 /* PokktVideoVC.h */,
+				EC7AEEFE20AC2A9000411222 /* PokktVideoVC.m */,
+				EC7AEF0420AC3BB000411222 /* PokktBannerVC.h */,
+				EC7AEF0520AC3BB000411222 /* PokktBannerVC.m */,
+				EC7AEF1420AC5E9700411222 /* SettingVC.h */,
+				EC7AEF1520AC5E9700411222 /* SettingVC.m */,
+			);
+			path = AdFormatClasses;
+			sourceTree = "<group>";
+		};
+		EC7AEEAE20AC230500411222 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EC7AEEAF20AC230500411222 /* icons8-Tick Box_500.png */,
+				EC7AEEB020AC230500411222 /* icons8-Tick Box_100.png */,
+				EC7AEEB120AC230500411222 /* icons8-Unchecked Checkbox_500.png */,
+				EC7AEEB220AC230500411222 /* icons8-Tick Box_50.png */,
+				EC7AEEB320AC230500411222 /* icons8-Unchecked Checkbox_100.png */,
+				EC7AEEB420AC230500411222 /* 640x1136.png */,
+				EC7AEEB520AC230500411222 /* pokkt_lg.png */,
+				EC7AEEB620AC230500411222 /* icons8-Unchecked Checkbox_50.png */,
+				EC7AEEB720AC230500411222 /* pkt_40x40.png */,
+				EC7AEEB820AC230500411222 /* BankGothicBold.ttf */,
+			);
+			name = Images;
+			path = PokktDemoApp/Images;
+			sourceTree = "<group>";
+		};
+		EC7AEEC420AC238A00411222 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E25B65A248E16B70082CA9A /* PokktSDK.framework */,
+				EC7BA4C9215D015100FA9C26 /* QuartzCore.framework */,
+				ECA165392139546400013DA5 /* libxml2.tbd */,
+				ECA163DD2139429600013DA5 /* SafariServices.framework */,
+				ECA163C921393DA900013DA5 /* WatchConnectivity.framework */,
+				ECA163C521393D9000013DA5 /* Social.framework */,
+				ECA163C321393D8300013DA5 /* MobileCoreServices.framework */,
+				ECA163C121393D6900013DA5 /* JavaScriptCore.framework */,
+				ECA163BF21393D5B00013DA5 /* CoreMedia.framework */,
+				ECA163BD21393D4700013DA5 /* AudioToolbox.framework */,
+				ECA163BB21393D3600013DA5 /* libz.1.2.5.tbd */,
+				ECA163B1213938EF00013DA5 /* libz.tbd */,
+				ECA163AF213938E500013DA5 /* libsqlite3.0.tbd */,
+				ECEDA6202135A76F001AA85D /* WebKit.framework */,
+				EC7AEEE120AC23DF00411222 /* CoreData.framework */,
+				EC7AEEDF20AC23D900411222 /* Foundation.framework */,
+				EC7AEEDD20AC23D300411222 /* MediaPlayer.framework */,
+				EC7AEEDB20AC23CD00411222 /* SystemConfiguration.framework */,
+				EC7AEED920AC23C700411222 /* UIKit.framework */,
+				EC7AEED720AC23C100411222 /* CoreTelephony.framework */,
+				EC7AEED520AC23BA00411222 /* AdSupport.framework */,
+				EC7AEED320AC23B500411222 /* CoreGraphics.framework */,
+				EC7AEED120AC23AE00411222 /* CoreMotion.framework */,
+				EC7AEECF20AC23A900411222 /* MessageUI.framework */,
+				EC7AEECB20AC23A300411222 /* EventKit.framework */,
+				EC7AEECC20AC23A300411222 /* EventKitUI.framework */,
+				EC7AEEC920AC239700411222 /* CoreLocation.framework */,
+				EC7AEEC720AC239000411222 /* AVFoundation.framework */,
+				EC7AEEC520AC238B00411222 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC7AEF0020AC315500411222 /* PokktUtility */ = {
+			isa = PBXGroup;
+			children = (
+				EC7AEF0120AC317600411222 /* PokktUtility.h */,
+				EC7AEF0220AC317600411222 /* PokktUtility.m */,
+			);
+			path = PokktUtility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC7AEE8F20AC226400411222 /* PokktDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7AEEA620AC226500411222 /* Build configuration list for PBXNativeTarget "PokktDemoApp" */;
+			buildPhases = (
+				EC7AEE8C20AC226400411222 /* Sources */,
+				EC7AEE8D20AC226400411222 /* Frameworks */,
+				EC7AEE8E20AC226400411222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokktDemoApp;
+			productName = PokktDemoApp;
+			productReference = EC7AEE9020AC226400411222 /* POKKTAds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC7AEE8820AC226400411222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Suraj Singh";
+				TargetAttributes = {
+					EC7AEE8F20AC226400411222 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = EC7AEE8B20AC226400411222 /* Build configuration list for PBXProject "PokktDemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC7AEE8720AC226400411222;
+			productRefGroup = EC7AEE9120AC226400411222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC7AEE8F20AC226400411222 /* PokktDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC7AEE8E20AC226400411222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7AEEC220AC230500411222 /* BankGothicBold.ttf in Resources */,
+				EC7AEEBA20AC230500411222 /* icons8-Tick Box_100.png in Resources */,
+				EC7AEEBC20AC230500411222 /* icons8-Tick Box_50.png in Resources */,
+				EC7AEEBD20AC230500411222 /* icons8-Unchecked Checkbox_100.png in Resources */,
+				EC7AEEBE20AC230500411222 /* 640x1136.png in Resources */,
+				EC7AEEA020AC226500411222 /* LaunchScreen.storyboard in Resources */,
+				EC7AEEBB20AC230500411222 /* icons8-Unchecked Checkbox_500.png in Resources */,
+				EC7AEEC120AC230500411222 /* pkt_40x40.png in Resources */,
+				EC7AEEBF20AC230500411222 /* pokkt_lg.png in Resources */,
+				EC7AEE9D20AC226500411222 /* Assets.xcassets in Resources */,
+				EC7AEEC020AC230500411222 /* icons8-Unchecked Checkbox_50.png in Resources */,
+				EC7AEE9B20AC226400411222 /* Main.storyboard in Resources */,
+				EC7AEEB920AC230500411222 /* icons8-Tick Box_500.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC7AEE8C20AC226400411222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7002D9243B241D007DDF70 /* PokktNativeScrollVC.m in Sources */,
+				EC7AEEA320AC226500411222 /* main.m in Sources */,
+				2E7002E2243B264F007DDF70 /* PokktNativeAdsVC.m in Sources */,
+				EC7AEF1620AC5E9700411222 /* SettingVC.m in Sources */,
+				EC7AEF0620AC3BB000411222 /* PokktBannerVC.m in Sources */,
+				EC7AEEFF20AC2A9000411222 /* PokktVideoVC.m in Sources */,
+				EC5F3A0F20D27244009E80CD /* PokktAdsVC.m in Sources */,
+				EC7AEF0320AC317600411222 /* PokktUtility.m in Sources */,
+				EC7AEE9520AC226400411222 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC7AEE9920AC226400411222 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7AEE9A20AC226400411222 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC7AEE9E20AC226500411222 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7AEE9F20AC226500411222 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC7AEEA420AC226500411222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		EC7AEEA520AC226500411222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		EC7AEEA720AC226500411222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZMVFPC5AQ8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PokktDemoApp/AdMobInt",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				HEADER_SEARCH_PATHS = "../PokktSDK/**";
+				INFOPLIST_FILE = PokktDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lsqlite3",
+					"-lxml2",
+					"-lz",
+					"-lc++",
+					"-fobjc-arc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokkt.;
+				PRODUCT_NAME = POKKTAds;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		EC7AEEA820AC226500411222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZMVFPC5AQ8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PokktDemoApp/AdMobInt",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				HEADER_SEARCH_PATHS = "../PokktSDK/**";
+				INFOPLIST_FILE = PokktDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lsqlite3",
+					"-lxml2",
+					"-lz",
+					"-lc++",
+					"-fobjc-arc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pokkt.;
+				PRODUCT_NAME = POKKTAds;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC7AEE8B20AC226400411222 /* Build configuration list for PBXProject "PokktDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7AEEA420AC226500411222 /* Debug */,
+				EC7AEEA520AC226500411222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7AEEA620AC226500411222 /* Build configuration list for PBXNativeTarget "PokktDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7AEEA720AC226500411222 /* Debug */,
+				EC7AEEA820AC226500411222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC7AEE8820AC226400411222 /* Project object */;
+}

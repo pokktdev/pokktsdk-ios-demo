@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Oq4-36-iZf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankGothicBold.ttf">
+            <string>BankGothicBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pokkt AdsVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PokktAdsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sqc-6l-tWS"/>
+                        <viewControllerLayoutGuide type="bottom" id="A4o-7F-QL6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokkt_lg.png" translatesAutoresizingMaskIntoConstraints="NO" id="NmF-Cy-lni">
+                                <rect key="frame" x="0.0" y="176.5" width="375" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="314" id="62X-3J-7jZ"/>
+                                    <constraint firstAttribute="width" constant="375" id="uDc-M0-iRB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bh3-ZL-EBv">
+                                <rect key="frame" x="16" y="199" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_interstitialBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="APX-CL-W5K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Full Screen ADs"/>
+                                <connections>
+                                    <segue destination="LrO-Us-L4I" kind="push" id="uqc-3F-ZJN"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYn-hd-rqt">
+                                <rect key="frame" x="16" y="144" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_videoBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mtb-dz-7ek"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.29005110263824463" green="0.052529983222484589" blue="0.97191363573074341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZ3-Sr-ptr">
+                                <rect key="frame" x="16" y="254" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_bannerBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0ef-Od-N2t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Banner Ads"/>
+                                <connections>
+                                    <segue destination="yFK-RW-Xp0" kind="push" id="DC1-bL-T7q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyr-PI-gKm">
+                                <rect key="frame" x="16" y="364" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_SettingBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iZu-dC-aJj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="jTf-w1-hLF" kind="push" id="abf-Ur-Si7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41g-BU-tba">
+                                <rect key="frame" x="16" y="309" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_OutstreamBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h4A-T3-bNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Native ADs"/>
+                                <connections>
+                                    <segue destination="F5m-76-Lo8" kind="push" id="1SA-t8-dqP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-jd-UwY">
+                                <rect key="frame" x="5" y="94" width="365" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zhm-3k-gCd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-1z-l5I">
+                                <rect key="frame" x="16" y="629" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nSy-h9-C4p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" tag="201" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-xk-OzB">
+                                <rect key="frame" x="16" y="54" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="EeT-TQ-cTu"/>
+                                    <constraint firstAttribute="width" constant="47" id="VCZ-MH-zND"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="gdprConsent:" destination="BYZ-38-t0r" eventType="valueChanged" id="ASr-bC-g9i"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GDPR Consent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-27-U83">
+                                <rect key="frame" x="68" y="59" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="jEd-ks-PNv"/>
+                                    <constraint firstAttribute="height" constant="21" id="lRO-Ln-A3D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GDPR Applicable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8v-ou-RsJ">
+                                <rect key="frame" x="275" y="59" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Nyl-dw-k5V"/>
+                                    <constraint firstAttribute="height" constant="21" id="ngw-3J-uSC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8mJ-HP-BjP">
+                                <rect key="frame" x="226" y="54" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="IKM-7N-Ieh"/>
+                                    <constraint firstAttribute="width" constant="47" id="euH-Wk-kqh"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="gdprConsent:" destination="BYZ-38-t0r" eventType="valueChanged" id="ASq-UE-iUi"/>
+                                </connections>
+                            </switch>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lpn-gx-g6T">
+                                <rect key="frame" x="16" y="412" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Play With Tag"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Pe-jd-UwY" firstAttribute="top" secondItem="sqc-6l-tWS" secondAttribute="bottom" constant="50" id="2zP-QW-ieK"/>
+                            <constraint firstItem="r8v-ou-RsJ" firstAttribute="centerY" secondItem="qSa-27-U83" secondAttribute="centerY" id="37F-Mw-vlN"/>
+                            <constraint firstItem="VMj-1z-l5I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5H0-jY-RYG"/>
+                            <constraint firstAttribute="trailing" secondItem="kyr-PI-gKm" secondAttribute="trailing" constant="16" id="5bX-Xm-Sbj"/>
+                            <constraint firstItem="8mJ-HP-BjP" firstAttribute="centerY" secondItem="r8v-ou-RsJ" secondAttribute="centerY" id="62c-b7-pab"/>
+                            <constraint firstItem="41g-BU-tba" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="8AN-UI-pwr"/>
+                            <constraint firstAttribute="trailing" secondItem="41g-BU-tba" secondAttribute="trailing" constant="16" id="9eH-CW-iLx"/>
+                            <constraint firstItem="Lpn-gx-g6T" firstAttribute="height" secondItem="kyr-PI-gKm" secondAttribute="height" id="DpJ-G8-aPY"/>
+                            <constraint firstItem="NmF-Cy-lni" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EQf-t4-EG0"/>
+                            <constraint firstItem="l7V-xk-OzB" firstAttribute="top" secondItem="sqc-6l-tWS" secondAttribute="bottom" constant="10" id="HGb-gA-cVw"/>
+                            <constraint firstItem="Lpn-gx-g6T" firstAttribute="leading" secondItem="kyr-PI-gKm" secondAttribute="leading" id="Hkf-Jn-gBw"/>
+                            <constraint firstItem="r8v-ou-RsJ" firstAttribute="leading" secondItem="8mJ-HP-BjP" secondAttribute="trailing" constant="2" id="JDH-OE-g8t"/>
+                            <constraint firstItem="qSa-27-U83" firstAttribute="centerY" secondItem="l7V-xk-OzB" secondAttribute="centerY" id="Ks2-v0-Rbb"/>
+                            <constraint firstItem="BYn-hd-rqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Lfc-qs-pLY"/>
+                            <constraint firstItem="VMj-1z-l5I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MOC-Dx-y40"/>
+                            <constraint firstAttribute="trailing" secondItem="r8v-ou-RsJ" secondAttribute="trailing" id="OFi-kd-ntd"/>
+                            <constraint firstAttribute="trailing" secondItem="BYn-hd-rqt" secondAttribute="trailing" constant="16" id="OfU-si-n0p"/>
+                            <constraint firstItem="BZ3-Sr-ptr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="XV1-Rz-SUh"/>
+                            <constraint firstItem="Lpn-gx-g6T" firstAttribute="top" secondItem="kyr-PI-gKm" secondAttribute="bottom" constant="8" id="XbK-jW-DuL"/>
+                            <constraint firstAttribute="trailing" secondItem="BZ3-Sr-ptr" secondAttribute="trailing" constant="16" id="YQr-ig-YIX"/>
+                            <constraint firstAttribute="trailing" secondItem="Bh3-ZL-EBv" secondAttribute="trailing" constant="16" id="YgZ-rU-bNf"/>
+                            <constraint firstItem="A4o-7F-QL6" firstAttribute="top" secondItem="VMj-1z-l5I" secondAttribute="bottom" constant="8" id="gfK-nR-yTi"/>
+                            <constraint firstItem="NmF-Cy-lni" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="klJ-Iq-yEX"/>
+                            <constraint firstItem="l7V-xk-OzB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nT4-DC-rCR"/>
+                            <constraint firstItem="qSa-27-U83" firstAttribute="leading" secondItem="l7V-xk-OzB" secondAttribute="trailing" constant="5" id="q1K-5J-0sC"/>
+                            <constraint firstItem="BYn-hd-rqt" firstAttribute="top" secondItem="sqc-6l-tWS" secondAttribute="bottom" constant="100" id="qrN-Bs-39O"/>
+                            <constraint firstItem="kyr-PI-gKm" firstAttribute="top" secondItem="41g-BU-tba" secondAttribute="bottom" constant="15" id="s0g-SJ-kpa"/>
+                            <constraint firstItem="41g-BU-tba" firstAttribute="top" secondItem="BZ3-Sr-ptr" secondAttribute="bottom" constant="15" id="ufH-bK-nvj"/>
+                            <constraint firstItem="Bh3-ZL-EBv" firstAttribute="top" secondItem="BYn-hd-rqt" secondAttribute="bottom" constant="15" id="vS9-6s-7lt"/>
+                            <constraint firstAttribute="trailing" secondItem="3Pe-jd-UwY" secondAttribute="trailing" constant="5" id="w1w-Bk-eaV"/>
+                            <constraint firstItem="3Pe-jd-UwY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="xeB-Th-gdU"/>
+                            <constraint firstItem="BZ3-Sr-ptr" firstAttribute="top" secondItem="Bh3-ZL-EBv" secondAttribute="bottom" constant="15" id="yuJ-UL-h0c"/>
+                            <constraint firstItem="kyr-PI-gKm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="zI5-gk-nVZ"/>
+                            <constraint firstItem="Bh3-ZL-EBv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="zQJ-B3-7Td"/>
+                            <constraint firstItem="Lpn-gx-g6T" firstAttribute="trailing" secondItem="kyr-PI-gKm" secondAttribute="trailing" id="zyM-br-JTd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="P3v-qG-XGC"/>
+                    <connections>
+                        <outlet property="appIdLbl" destination="3Pe-jd-UwY" id="NQ3-9g-7BI"/>
+                        <outlet property="bannerBtn" destination="BZ3-Sr-ptr" id="HZY-Sh-Vn9"/>
+                        <outlet property="interstitialBtn" destination="Bh3-ZL-EBv" id="bgd-Bn-K8e"/>
+                        <outlet property="logoImg" destination="NmF-Cy-lni" id="dsc-0K-oOr"/>
+                        <outlet property="outstreamBtn" destination="41g-BU-tba" id="hbs-uO-wjz"/>
+                        <outlet property="settingBtn" destination="kyr-PI-gKm" id="s18-gp-48K"/>
+                        <outlet property="versionLabel" destination="VMj-1z-l5I" id="Ev5-Rf-flm"/>
+                        <outlet property="videoBtn" destination="BYn-hd-rqt" id="gka-cz-eRa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="-621"/>
+        </scene>
+        <!--SettingVC-->
+        <scene sceneID="CYr-OA-iiJ">
+            <objects>
+                <viewController id="jTf-w1-hLF" customClass="SettingVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Sj-TT-0j9"/>
+                        <viewControllerLayoutGuide type="bottom" id="5dL-Fo-mN5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tiu-mT-dYP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokkt_lg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rG8-e8-Fbo">
+                                <rect key="frame" x="4" y="184" width="367" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="ko4-LH-6QL"/>
+                                    <constraint firstAttribute="width" constant="367" id="uaJ-cg-6hl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Application ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L54-xo-MYu">
+                                <rect key="frame" x="16" y="70" width="150.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="cbF-Wb-el0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Security ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W65-l0-grM">
+                                <rect key="frame" x="16" y="155" width="123" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="rlO-d5-iXr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4a069e89fe4a4e4f58a26f8bff2974ba" borderStyle="roundedRect" placeholder="Security Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDk-4N-KAb">
+                                <rect key="frame" x="16" y="187" width="343" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="test_secKey"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L0l-5I-fUf"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jTf-w1-hLF" id="okc-gn-nLt"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="cc41e865391d6ea371b18aff27cc10e6" borderStyle="roundedRect" placeholder="Application Id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlR-xK-bz9">
+                                <rect key="frame" x="16" y="103" width="343" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="test_appId"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zDO-0A-jus"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jTf-w1-hLF" id="0QU-4P-gKp"/>
+                                </connections>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bb0-45-6gs">
+                                <rect key="frame" x="16" y="247" width="343" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_export_log"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="WlC-7z-rcR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                                <state key="normal" title="Export Log">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DDk-4N-KAb" secondAttribute="trailing" constant="16" id="2aB-dj-UZw"/>
+                            <constraint firstItem="W65-l0-grM" firstAttribute="top" secondItem="PlR-xK-bz9" secondAttribute="bottom" constant="22" id="2dR-q8-G6F"/>
+                            <constraint firstAttribute="trailing" secondItem="Bb0-45-6gs" secondAttribute="trailing" constant="16" id="3lk-5n-RKD"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="L54-xo-MYu" secondAttribute="trailing" constant="20" symbolic="YES" id="Azt-qG-HMp"/>
+                            <constraint firstItem="PlR-xK-bz9" firstAttribute="leading" secondItem="Tiu-mT-dYP" secondAttribute="leading" constant="16" id="Djj-jA-Pwj"/>
+                            <constraint firstItem="W65-l0-grM" firstAttribute="leading" secondItem="Tiu-mT-dYP" secondAttribute="leading" constant="16" id="F5m-57-M2N"/>
+                            <constraint firstItem="Bb0-45-6gs" firstAttribute="top" secondItem="DDk-4N-KAb" secondAttribute="bottom" constant="30" id="GyP-zc-tdM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W65-l0-grM" secondAttribute="trailing" constant="20" symbolic="YES" id="LkA-I0-e52"/>
+                            <constraint firstItem="PlR-xK-bz9" firstAttribute="top" secondItem="L54-xo-MYu" secondAttribute="bottom" constant="8" id="NGn-3p-txS"/>
+                            <constraint firstItem="rG8-e8-Fbo" firstAttribute="centerX" secondItem="Tiu-mT-dYP" secondAttribute="centerX" id="Ofd-8L-ILb"/>
+                            <constraint firstItem="DDk-4N-KAb" firstAttribute="top" secondItem="W65-l0-grM" secondAttribute="bottom" constant="8" id="P8b-et-mAw"/>
+                            <constraint firstItem="rG8-e8-Fbo" firstAttribute="centerY" secondItem="Tiu-mT-dYP" secondAttribute="centerY" id="VW6-xP-yG8"/>
+                            <constraint firstItem="Bb0-45-6gs" firstAttribute="leading" secondItem="Tiu-mT-dYP" secondAttribute="leading" constant="16" id="YGD-Jg-rvU"/>
+                            <constraint firstItem="DDk-4N-KAb" firstAttribute="leading" secondItem="Tiu-mT-dYP" secondAttribute="leading" constant="16" id="aZr-3F-qAj"/>
+                            <constraint firstItem="L54-xo-MYu" firstAttribute="top" secondItem="4Sj-TT-0j9" secondAttribute="bottom" constant="26" id="hxX-47-ohK"/>
+                            <constraint firstItem="L54-xo-MYu" firstAttribute="leading" secondItem="Tiu-mT-dYP" secondAttribute="leading" constant="16" id="pLq-Am-cnX"/>
+                            <constraint firstAttribute="trailing" secondItem="PlR-xK-bz9" secondAttribute="trailing" constant="16" id="wdt-G1-jCc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qen-sd-MUb"/>
+                    <connections>
+                        <outlet property="appIdTF" destination="PlR-xK-bz9" id="1y0-6D-yyu"/>
+                        <outlet property="logoImgV" destination="rG8-e8-Fbo" id="hEo-He-1tk"/>
+                        <outlet property="secKeyTF" destination="DDk-4N-KAb" id="zjh-O1-DLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgu-iO-mIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="152"/>
+        </scene>
+        <!--Pokkt Native AdsVC-->
+        <scene sceneID="o8o-2b-qyu">
+            <objects>
+                <viewController id="F5m-76-Lo8" customClass="PokktNativeAdsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pzo-kb-JqD"/>
+                        <viewControllerLayoutGuide type="bottom" id="OpD-kj-lqv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="27S-4A-ZsY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokkt_lg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jer-ba-NRI">
+                                <rect key="frame" x="0.0" y="176.5" width="375" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="314" id="FQd-ZB-DPr"/>
+                                    <constraint firstAttribute="width" constant="375" id="RzN-Ng-DqJ"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a98-sr-wtR">
+                                <rect key="frame" x="16" y="196" width="343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_listView"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Native Table View"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEQ-ck-7Sg">
+                                <rect key="frame" x="16" y="249" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_scrollView"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="U9v-8U-f7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Native Scroll View"/>
+                                <connections>
+                                    <segue destination="Dgg-MM-Ses" kind="push" identifier="scrollview" id="t7L-RC-HzW"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bd9-1d-YEY">
+                                <rect key="frame" x="16" y="306" width="343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_webView"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Native Web view"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="screen id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yoa-h7-XJk">
+                                <rect key="frame" x="16" y="94" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KFh-fR-pOL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OEQ-ck-7Sg" firstAttribute="top" secondItem="yoa-h7-XJk" secondAttribute="bottom" constant="120" id="LDO-Y5-vE3"/>
+                            <constraint firstItem="Jer-ba-NRI" firstAttribute="centerY" secondItem="27S-4A-ZsY" secondAttribute="centerY" id="MEl-vz-i3H"/>
+                            <constraint firstItem="OEQ-ck-7Sg" firstAttribute="trailing" secondItem="27S-4A-ZsY" secondAttribute="trailingMargin" id="U4p-mt-Oui"/>
+                            <constraint firstItem="yoa-h7-XJk" firstAttribute="top" secondItem="pzo-kb-JqD" secondAttribute="bottom" constant="50" id="aiv-MX-s7o"/>
+                            <constraint firstItem="yoa-h7-XJk" firstAttribute="trailing" secondItem="27S-4A-ZsY" secondAttribute="trailingMargin" id="cud-aJ-teP"/>
+                            <constraint firstItem="yoa-h7-XJk" firstAttribute="leading" secondItem="27S-4A-ZsY" secondAttribute="leadingMargin" id="dA8-cW-co3"/>
+                            <constraint firstItem="OEQ-ck-7Sg" firstAttribute="leading" secondItem="27S-4A-ZsY" secondAttribute="leadingMargin" id="z3F-BW-1Gd"/>
+                            <constraint firstItem="Jer-ba-NRI" firstAttribute="centerX" secondItem="27S-4A-ZsY" secondAttribute="centerX" id="zlJ-uP-Uf3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EqR-ZH-GSs"/>
+                    <connections>
+                        <outlet property="screenIdTextField" destination="yoa-h7-XJk" id="3M5-we-cbG"/>
+                        <outlet property="scrollBtn" destination="OEQ-ck-7Sg" id="PUl-Sc-1bg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5R-hV-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="151.57421289355324"/>
+        </scene>
+        <!--Pokkt Native ScrollVC-->
+        <scene sceneID="MoV-Lc-LCY">
+            <objects>
+                <viewController id="Dgg-MM-Ses" customClass="PokktNativeScrollVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lVS-NN-v6G"/>
+                        <viewControllerLayoutGuide type="bottom" id="ILD-vP-pUm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cmb-Fv-IbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="soj-7d-URv">
+                                <rect key="frame" x="5" y="49" width="365" height="613"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="soj-7d-URv" secondAttribute="trailing" constant="5" id="ZdD-l0-TIG"/>
+                            <constraint firstItem="soj-7d-URv" firstAttribute="top" secondItem="lVS-NN-v6G" secondAttribute="bottom" constant="5" id="bJZ-k9-IyS"/>
+                            <constraint firstItem="soj-7d-URv" firstAttribute="leading" secondItem="Cmb-Fv-IbS" secondAttribute="leading" constant="5" id="lnr-SA-6Tz"/>
+                            <constraint firstItem="ILD-vP-pUm" firstAttribute="top" secondItem="soj-7d-URv" secondAttribute="bottom" constant="5" id="uCa-F5-HQQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="59x-V4-Vpa"/>
+                    <connections>
+                        <outlet property="scrollView" destination="soj-7d-URv" id="zy7-ro-Dcj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1VV-9F-umo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="152"/>
+        </scene>
+        <!--Pokkt BannerVC-->
+        <scene sceneID="8Yy-em-ALb">
+            <objects>
+                <viewController id="yFK-RW-Xp0" customClass="PokktBannerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l4i-Vy-dP6"/>
+                        <viewControllerLayoutGuide type="bottom" id="gIw-pl-xab"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ndT-h0-Uac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokkt_lg.png" translatesAutoresizingMaskIntoConstraints="NO" id="p54-rx-5Nq">
+                                <rect key="frame" x="0.0" y="176.5" width="375" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="X9D-Kz-fZ3"/>
+                                    <constraint firstAttribute="height" constant="314" id="cVK-au-zDr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uha-gC-VUC">
+                                <rect key="frame" x="16" y="222" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_LoadTopBannerBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rb9-OF-jFb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Load Top Banner"/>
+                                <connections>
+                                    <action selector="loadBannerAdTop:" destination="yFK-RW-Xp0" eventType="touchUpInside" id="3eh-Rd-J6I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjn-zN-KtP">
+                                <rect key="frame" x="16" y="277" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_DestroyTopBannerBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="feN-4a-jkP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Destroy Top Banner"/>
+                                <connections>
+                                    <action selector="destroyBannerAd_Top:" destination="yFK-RW-Xp0" eventType="touchUpInside" id="umo-fB-dB6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HI2-we-4VI">
+                                <rect key="frame" x="16" y="357" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_LoadBottomBannerBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3qP-iS-0PP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Load Bottom Banner"/>
+                                <connections>
+                                    <action selector="loadBannerAdBottom:" destination="yFK-RW-Xp0" eventType="touchUpInside" id="55U-D7-fR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84a-mr-cAQ">
+                                <rect key="frame" x="16" y="412" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_DestroyBottomBannerBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="22u-ES-dkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Destroy Bottom Banner"/>
+                                <connections>
+                                    <action selector="destroyBannerAdBotton:" destination="yFK-RW-Xp0" eventType="touchUpInside" id="TMc-iD-ZTP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Default" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dm7-0Q-Sxa">
+                                <rect key="frame" x="16" y="156" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lj8-BT-jFv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="yFK-RW-Xp0" id="tKl-T4-IZL"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uha-gC-VUC" firstAttribute="top" secondItem="Dm7-0Q-Sxa" secondAttribute="bottom" constant="36" id="4u0-LS-0GM"/>
+                            <constraint firstItem="p54-rx-5Nq" firstAttribute="centerY" secondItem="ndT-h0-Uac" secondAttribute="centerY" id="8aN-o4-i8Z"/>
+                            <constraint firstItem="84a-mr-cAQ" firstAttribute="leading" secondItem="ndT-h0-Uac" secondAttribute="leading" constant="16" id="DaW-f6-nQe"/>
+                            <constraint firstAttribute="trailing" secondItem="Uha-gC-VUC" secondAttribute="trailing" constant="16" id="Fcf-cL-Crw"/>
+                            <constraint firstItem="Dm7-0Q-Sxa" firstAttribute="top" secondItem="l4i-Vy-dP6" secondAttribute="bottom" constant="112" id="G7J-1O-mfh"/>
+                            <constraint firstAttribute="trailing" secondItem="Tjn-zN-KtP" secondAttribute="trailing" constant="16" id="GR0-hv-cSR"/>
+                            <constraint firstItem="Uha-gC-VUC" firstAttribute="leading" secondItem="ndT-h0-Uac" secondAttribute="leading" constant="16" id="Igm-kE-oxU"/>
+                            <constraint firstAttribute="trailing" secondItem="84a-mr-cAQ" secondAttribute="trailing" constant="16" id="M14-KN-1WV"/>
+                            <constraint firstAttribute="trailing" secondItem="HI2-we-4VI" secondAttribute="trailing" constant="16" id="OE0-NR-Ea0"/>
+                            <constraint firstItem="Tjn-zN-KtP" firstAttribute="top" secondItem="Uha-gC-VUC" secondAttribute="bottom" constant="15" id="TNj-2c-Rvo"/>
+                            <constraint firstItem="Tjn-zN-KtP" firstAttribute="leading" secondItem="ndT-h0-Uac" secondAttribute="leading" constant="16" id="TnV-tq-vo7"/>
+                            <constraint firstItem="HI2-we-4VI" firstAttribute="top" secondItem="Tjn-zN-KtP" secondAttribute="bottom" constant="40" id="ab1-IX-uXr"/>
+                            <constraint firstItem="p54-rx-5Nq" firstAttribute="centerX" secondItem="ndT-h0-Uac" secondAttribute="centerX" id="dJ9-hL-ahN"/>
+                            <constraint firstItem="Dm7-0Q-Sxa" firstAttribute="leading" secondItem="ndT-h0-Uac" secondAttribute="leading" constant="16" id="jXg-su-8QT"/>
+                            <constraint firstItem="HI2-we-4VI" firstAttribute="leading" secondItem="ndT-h0-Uac" secondAttribute="leading" constant="16" id="kMU-Zg-Kcm"/>
+                            <constraint firstAttribute="trailing" secondItem="Dm7-0Q-Sxa" secondAttribute="trailing" constant="16" id="kxR-Ei-zg7"/>
+                            <constraint firstItem="84a-mr-cAQ" firstAttribute="top" secondItem="HI2-we-4VI" secondAttribute="bottom" constant="15" id="mO0-z8-t1d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ht7-LQ-OCh"/>
+                    <connections>
+                        <outlet property="destroyBanner_bottom" destination="84a-mr-cAQ" id="fe0-m4-RxL"/>
+                        <outlet property="destroyBanner_top" destination="Tjn-zN-KtP" id="i7p-eZ-RKb"/>
+                        <outlet property="loadBanner_bottom" destination="HI2-we-4VI" id="JMb-MR-iDX"/>
+                        <outlet property="loadBanner_top" destination="Uha-gC-VUC" id="l3m-jd-Z3p"/>
+                        <outlet property="logoImgV" destination="p54-rx-5Nq" id="X1C-GC-2mn"/>
+                        <outlet property="screenTF" destination="Dm7-0Q-Sxa" id="LHA-HB-YGG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uD2-Xs-mur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="-621"/>
+        </scene>
+        <!--Pokkt VideoVC-->
+        <scene sceneID="mcR-fM-e5Q">
+            <objects>
+                <viewController id="LrO-Us-L4I" customClass="PokktVideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZk-Yo-60h"/>
+                        <viewControllerLayoutGuide type="bottom" id="Urc-gD-IU4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r0D-BI-0sp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokkt_lg.png" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-ze-O9s">
+                                <rect key="frame" x="0.0" y="176.5" width="375" height="314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="SDU-Y2-DAv"/>
+                                    <constraint firstAttribute="height" constant="314" id="ttn-1d-HYm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXw-yL-jFc">
+                                <rect key="frame" x="16" y="144" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_CacheRewardedVideoBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="q4V-IX-31w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Cache Ad"/>
+                                <connections>
+                                    <action selector="cacheFullScreenAd:" destination="LrO-Us-L4I" eventType="touchUpInside" id="nkx-Gh-NDN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLy-cu-I2I">
+                                <rect key="frame" x="16" y="199" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_showRewardedVideoBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MAU-VI-pIq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showFullScreenAd:" destination="LrO-Us-L4I" eventType="touchUpInside" id="Lcm-9i-HZR"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEW-Xp-Ivt">
+                                <rect key="frame" x="16" y="279" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_CacheNonRewardedVideoBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jg9-Fh-Z6v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Cache Non-Rewarded"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNx-df-2na">
+                                <rect key="frame" x="16" y="334" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <accessibility key="accessibilityConfiguration" label="test_showNonRewardedVideoBtn"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lqo-s9-VfD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                                <state key="normal" title="Show Non-Rewarded"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Default" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wuy-GL-txb">
+                                <rect key="frame" x="16" y="78" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IcN-91-SzQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LrO-Us-L4I" id="ts6-Qn-iU0"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FD-2v-Ofk">
+                                <rect key="frame" x="16" y="629" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3jf-BG-fYr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Urc-gD-IU4" firstAttribute="top" secondItem="9FD-2v-Ofk" secondAttribute="bottom" constant="8" id="1P2-w7-zKa"/>
+                            <constraint firstAttribute="trailing" secondItem="Wuy-GL-txb" secondAttribute="trailing" constant="16" id="473-2j-pqB"/>
+                            <constraint firstItem="9FD-2v-Ofk" firstAttribute="leading" secondItem="r0D-BI-0sp" secondAttribute="leadingMargin" id="8FK-pp-bdO"/>
+                            <constraint firstItem="W0z-ze-O9s" firstAttribute="centerX" secondItem="r0D-BI-0sp" secondAttribute="centerX" id="9P6-AI-zc5"/>
+                            <constraint firstItem="sEW-Xp-Ivt" firstAttribute="leading" secondItem="r0D-BI-0sp" secondAttribute="leading" constant="16" id="Eaj-6g-Q9O"/>
+                            <constraint firstAttribute="trailing" secondItem="HLy-cu-I2I" secondAttribute="trailing" constant="16" id="FWL-WN-TX6"/>
+                            <constraint firstAttribute="trailing" secondItem="BNx-df-2na" secondAttribute="trailing" constant="16" id="Jo9-JV-iq5"/>
+                            <constraint firstItem="9FD-2v-Ofk" firstAttribute="trailing" secondItem="r0D-BI-0sp" secondAttribute="trailingMargin" id="S4O-Yv-42q"/>
+                            <constraint firstItem="Wuy-GL-txb" firstAttribute="top" secondItem="MZk-Yo-60h" secondAttribute="bottom" constant="34" id="YfX-Ie-kOn"/>
+                            <constraint firstItem="HLy-cu-I2I" firstAttribute="leading" secondItem="r0D-BI-0sp" secondAttribute="leading" constant="16" id="a8I-Xk-rMp"/>
+                            <constraint firstAttribute="trailing" secondItem="sEW-Xp-Ivt" secondAttribute="trailing" constant="16" id="asE-He-INw"/>
+                            <constraint firstAttribute="trailing" secondItem="wXw-yL-jFc" secondAttribute="trailing" constant="16" id="aum-xq-6Kg"/>
+                            <constraint firstItem="BNx-df-2na" firstAttribute="top" secondItem="sEW-Xp-Ivt" secondAttribute="bottom" constant="15" id="bXm-Ox-ewS"/>
+                            <constraint firstItem="Wuy-GL-txb" firstAttribute="leading" secondItem="r0D-BI-0sp" secondAttribute="leading" constant="16" id="ihe-XC-R02"/>
+                            <constraint firstItem="BNx-df-2na" firstAttribute="leading" secondItem="r0D-BI-0sp" secondAttribute="leading" constant="16" id="k5a-U9-76j"/>
+                            <constraint firstItem="sEW-Xp-Ivt" firstAttribute="top" secondItem="HLy-cu-I2I" secondAttribute="bottom" constant="40" id="nGa-Hk-YRx"/>
+                            <constraint firstItem="HLy-cu-I2I" firstAttribute="top" secondItem="wXw-yL-jFc" secondAttribute="bottom" constant="15" id="ndG-2l-Y57"/>
+                            <constraint firstItem="wXw-yL-jFc" firstAttribute="top" secondItem="MZk-Yo-60h" secondAttribute="bottom" constant="100" id="tAH-Yx-Ad8"/>
+                            <constraint firstItem="W0z-ze-O9s" firstAttribute="centerY" secondItem="r0D-BI-0sp" secondAttribute="centerY" id="uCo-1M-BKp"/>
+                            <constraint firstItem="wXw-yL-jFc" firstAttribute="leading" secondItem="r0D-BI-0sp" secondAttribute="leading" constant="16" id="ykg-27-WDw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zam-4n-5Xu"/>
+                    <connections>
+                        <outlet property="cacheRewardedBtn" destination="wXw-yL-jFc" id="peO-t5-Fc7"/>
+                        <outlet property="logoImg" destination="W0z-ze-O9s" id="5J2-FL-Jep"/>
+                        <outlet property="rewardPointLabel" destination="9FD-2v-Ofk" id="7cL-DU-sLg"/>
+                        <outlet property="screenTF" destination="Wuy-GL-txb" id="yD0-G0-ce6"/>
+                        <outlet property="showRewardedBtn" destination="HLy-cu-I2I" id="Gpc-tF-QKz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIr-W6-KS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-621"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZOT-eI-U3f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oq4-36-iZf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2It-TS-9dB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NtR-lK-b40"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D1B-fP-pvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-641" y="-177"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokkt_lg.png" width="512" height="316"/>
+    </resources>
+</document>
