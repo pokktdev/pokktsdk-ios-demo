@@ -56,7 +56,7 @@
 [PokktAds cacheAd:screenId withDelegate:delegate];
 ```
 
-###1. To Show Video Ad:
+To Show Video Ad:
 
 ```[PokktAds showAd:screenId viewController:viewController withDelegate:delegate];
 ```
