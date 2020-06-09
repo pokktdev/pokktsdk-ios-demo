@@ -1,30 +1,9 @@
 # PokktSDK Integration Guide (iOS, v8.0.0)
 
 
-[SDK Integration](#_heading=h.30j0zll)
-
-[SDK Configuration](#_heading=h.1fob9te)
-
-[Full-Screen Ads](#_heading=h.2et92p0)
-
-[Banner Ads](#_heading=h.2s8eyo1)
-
-[Native Ads](#_heading=h.17dp8vu)
-
-[Additional SDK Configuration](#_heading=h.1ksv4uv)
-
-[GDPR](#_heading=h.44sinio)
-
-[Extra Parameter](#_heading=h.2jxsxqh)
-
-[ThirdPartyUser Id](#_heading=h.3j2qqm3)
-
-[Pokkt AdPlayer Configuration](#_heading=h.1y810tw)
-
 ## SDK Integration
 
 - Download the latest SDK. [[LINK](https://wiki.pokkt.com/Native_SDK_Download)]
-- Unzip the downloaded file and drag the PokktSDK.framework directory into Xcode under Framework.
 - Add the required compiler flags to &#39;Other Linker Flags&#39; field in your project&#39;s Build Settings:
 - **-ObjC**
 - **-lxml2**
