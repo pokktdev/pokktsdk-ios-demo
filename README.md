@@ -4,9 +4,11 @@
 ## SDK Integration
 
 - Download the latest SDK. [[LINK](https://wiki.pokkt.com/Native_SDK_Download)]
+- Put PokktSDK.framework file inside the frameworks in the application.
 - Add the required compiler flags to &#39;Other Linker Flags&#39; field in your project&#39;s Build Settings:
 - **-ObjC**
 - **-lxml2**
+- Run the application
 
 
 ## SDK Configuration
