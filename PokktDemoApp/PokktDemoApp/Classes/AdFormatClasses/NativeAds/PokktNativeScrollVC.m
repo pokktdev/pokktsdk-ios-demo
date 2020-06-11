@@ -1,11 +1,3 @@
-//
-//  PokktNativeScrollVC.m
-//  PokktDemoApp
-//
-//  Created by Ranajit Chandra on 06/04/20.
-//  Copyright © 2020 Ranajit Chandra. All rights reserved.
-//
-
 #import "PokktNativeScrollVC.h"
 #import "PokktUtility.h"
 
