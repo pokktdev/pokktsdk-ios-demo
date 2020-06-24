@@ -16,7 +16,7 @@
     
     NSUserDefaults *settings = [NSUserDefaults standardUserDefaults];
 	
-    [settings setValue:@"b26277c8c81d33706179288e7bcd9847" forKey:@"appId"];   /* SACHIN 1*/
+    [settings setValue:@"b26277c8c81d33706179288e7bcd9847" forKey:@"appId"];
     [settings setValue:@"04817587aa780627188b9dff0eb7757a" forKey:@"secKey"];
 
     [settings synchronize];
@@ -55,7 +55,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

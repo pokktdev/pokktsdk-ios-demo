@@ -1,5 +1,5 @@
 #import "PokktNativeAdsVC.h"
-#import "PokktUtility.h"
+#import "PokktSpinnerUtils.h"
 #import "PokktNativeScrollVC.h"
 
 @interface PokktNativeAdsVC ()

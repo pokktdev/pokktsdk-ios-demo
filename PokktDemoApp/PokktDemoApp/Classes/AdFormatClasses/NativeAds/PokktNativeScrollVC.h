@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <PokktSDK/PokktAds.h>
 
-@interface PokktNativeScrollVC : UIViewController <PokktNativeAdDelegate>
+@interface PokktNativeScrollVC : UIViewController <PokktAdDelegate>
 {
     
 }

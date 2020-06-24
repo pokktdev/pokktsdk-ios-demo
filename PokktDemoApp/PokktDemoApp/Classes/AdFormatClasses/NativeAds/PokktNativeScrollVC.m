@@ -1,5 +1,4 @@
 #import "PokktNativeScrollVC.h"
-#import "PokktUtility.h"
 
 @interface PokktNativeScrollVC ()
 
@@ -77,34 +76,9 @@
 {
 }
 
-- (void)adClicked:(NSString *)screenId
-{
-}
+#pragma mark Pokkt nativeAd delegates:
 
-- (void)adClosed:(NSString *)screenId adCompleted:(BOOL)adCompleted
-{
-    NSLog(@"native ad closed, adCompleted:%@", (adCompleted ? @"YES" : @"NO"));
-    
-    NSString *msg = [NSString stringWithFormat:@"Native ad closed for screenId: %@, adCompleted: %@", screenId, (adCompleted ? @"YES" : @"NO")];
-    [PokktDebugger showToast:msg viewController:self];
-    
-    [self.adContainer removeFromSuperview];
-}
-
-- (void)adGratified:(NSString *)screenId withReward:(double)reward
-{
-}
-
-- (void)adDisplayResult:(NSString *)screenId isSuccess:(BOOL)success errorMessage:(NSString *)errorMessage
-{
-}
-
-- (void)adCachingResult:(NSString *)screenId isSuccess:(BOOL)success withReward:(double)reward errorMessage:(NSString *)errorMessage
-{
-}
-
-
-- (void)nativeAdFailed:(NSString *)screenId error:(NSString *)errorMessage
+- (void)adFailed:(NSString *)screenId error:(NSString *)errorMessage
 {
     NSLog(@"nativeAdFailed, error:%@", errorMessage);
     
@@ -114,7 +88,7 @@
     [self.adContainer removeFromSuperview];
 }
 
-- (void)nativeAdReady:(NSString *)screenId withNativeAd:(PokktNativeAd *)pokktNativeAd
+- (void)adReady:(NSString *)screenId withNativeAd:(PokktNativeAd *)pokktNativeAd
 {
     NSLog(@"nativeAdReady");
     

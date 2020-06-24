@@ -1,5 +1,5 @@
 #import "PokktVideoVC.h"
-#import "PokktUtility.h"
+#import "PokktSpinnerUtils.h"
 
 
 #define EarnedPoints @"Points"
@@ -51,13 +51,13 @@
 
 -(IBAction)cacheFullScreenAd:(id)sender
 {
-    [PokktUtility addSpinnerOnButton:cacheRewardedBtn];
+    [PokktSpinnerUtils addSpinnerOnButton:cacheRewardedBtn];
     [PokktAds cacheAd:screenTF.text withDelegate:self];
 }
 
 -(IBAction)showFullScreenAd:(id)sender
 {
-    [PokktAds showAd:screenTF.text withViewController:self withDelegate:self];
+    [PokktAds showAd:screenTF.text withDelegate:self presentingVC:self];
 }
 
 
@@ -81,19 +81,19 @@
 
 #pragma mark Pokkt Video Ads Delegates
 
--(void)adClicked:(NSString *)screenId
+- (void)adClicked:(NSString *)screenId
 {
     NSString *msg = [NSString stringWithFormat:@"Video ad Clicked for %@", screenId];
     [PokktDebugger showToast:msg viewController:self];
 }
 
--(void)adClosed:(NSString *)screenId adCompleted:(BOOL)adCompleted
+- (void)adClosed:(NSString *)screenId adCompleted:(BOOL)adCompleted
 {
     NSString *msg = [NSString stringWithFormat:@"Video ad closed for %@, ad was completed: %@", screenId, (adCompleted ? @"YES" : @"NO")];
     [PokktDebugger showToast:msg viewController:self];
 }
 
--(void)adGratified:(NSString *)screenId withReward:(double)reward
+- (void)adGratified:(NSString *)screenId withReward:(double)reward
 {
     if([userDefaluts objectForKey:EarnedPoints])
     {
@@ -110,9 +110,8 @@
     [PokktDebugger showToast:msg viewController:self];
 }
 
--(void)adCachingResult:(NSString *)screenId isSuccess:(BOOL)success withReward:(double)reward errorMessage:(NSString *)errorMessage
-{
-    [PokktUtility stopSpinner:cacheRewardedBtn];
+- (void)adCachingResult:(NSString *)screenId isSuccess:(BOOL)success withReward:(double)reward errorMessage:(NSString *)errorMessage {
+    [PokktSpinnerUtils stopSpinner:cacheRewardedBtn];
     NSString *msg = @"";
     
     if([errorMessage  isEqual: @""] || success == YES) {
@@ -120,17 +119,18 @@
     } else {
         msg = [NSString stringWithFormat:@"Video ad caching failed for %@ with error is %@", screenId, errorMessage];
     }
+    
     [PokktDebugger showToast:msg viewController:self];
 }
 
--(void)adDisplayResult:(NSString *)screenId isSuccess:(BOOL)success errorMessage:(NSString *)errorMessage
-{
+- (void)adDisplayResult:(NSString *)screenId isSuccess:(BOOL)success errorMessage:(NSString *)errorMessage {
     NSString *msg = @"";
     if([errorMessage  isEqual: @""] || success == YES) {
         msg = [NSString stringWithFormat:@"Video ad displayed for %@", screenId];
     } else {
         msg = [NSString stringWithFormat:@"Video ad falied to show for %@ with error %@", screenId, errorMessage];
     }
+    
     [PokktDebugger showToast:msg viewController:self];
 }
 
